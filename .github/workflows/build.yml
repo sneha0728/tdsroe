@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
 
       # This step includes the required dynamic identifier
-      - name: Build for Node ${{ matrix.node-version }} (matrix-c064f21)
+      - name: Build for Node ${{ matrix.node-version }} (matrix-19c1501)
         run: |
           echo "Simulating build for Node.js version ${{ matrix.node-version }}"
           echo "This is the build output." > build_output.txt
