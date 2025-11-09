@@ -23,13 +23,13 @@ jobs:
         run: |
           echo "Simulating build for Node.js version ${{ matrix.node-version }}"
           echo "This is the build output." > build_output.txt
-          echo "Identifier: matrix-c064f21" >> build_output.txt
+          echo "Identifier: matrix-19c1501" >> build_output.txt
 
       # This step uploads an artifact with the required dynamic prefix
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           # Use the prefix and include the matrix variant in the name
-          name: build-c064f21-node-${{ matrix.node-version }}
+          name: build-19c1501-node-${{ matrix.node-version }}
           path: build_output.txt
           retention-days: 7
